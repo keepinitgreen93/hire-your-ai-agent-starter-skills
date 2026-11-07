@@ -17,7 +17,18 @@ Each skill drafts and plans. None of them sends, publishes, spends, or changes a
 
 You need the Hermes desktop app: https://hermes-agent.nousresearch.com/desktop
 
-Open a terminal (PowerShell on Windows, Terminal on a Mac) and run these four lines:
+The easy way: open a new Hermes chat and paste this prompt.
+
+```text
+Install these four free starter skills from the public repo https://github.com/keepinitgreen93/hire-your-ai-agent-starter-skills. Use these exact paths with "hermes skills install <path> --yes":
+keepinitgreen93/hire-your-ai-agent-starter-skills/skills/company-brain-starter
+keepinitgreen93/hire-your-ai-agent-starter-skills/skills/dream-customer-avatar-starter
+keepinitgreen93/hire-your-ai-agent-starter-skills/skills/convert-follow-up-loop
+keepinitgreen93/hire-your-ai-agent-starter-skills/skills/organic-content-engine
+Then confirm each one is installed. If one fails, show me the exact command to run myself and keep going.
+```
+
+If Hermes cannot install a skill, it will show you the exact command. You can also run the commands yourself. Open a terminal (PowerShell on Windows, Terminal on a Mac) and paste these four lines:
 
 ```text
 hermes skills install keepinitgreen93/hire-your-ai-agent-starter-skills/skills/company-brain-starter --yes
@@ -49,9 +60,9 @@ To install one skill, run only its line.
 python scripts/validate_library.py
 ```
 
-## What comes next
+## Need a hand?
 
-The next step after the challenge is the done for you implementation, the AI Growth Foundation. Ask Truly Authentic Marketing at hello@trulyauthenticmarketing.com.
+Feeling stuck or want it set up with you? [Here is how we can help.](https://docs.google.com/document/d/1WA1I6jKwomToqweTzdFSOvQb0Kc-mzja-r56Iojj4nk/edit)
 
 ## License
 
