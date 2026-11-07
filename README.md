@@ -20,12 +20,12 @@ You need the Hermes desktop app: https://hermes-agent.nousresearch.com/desktop
 The easy way: open a new Hermes chat and paste this prompt.
 
 ```text
-Install these four free starter skills from the public repo https://github.com/keepinitgreen93/hire-your-ai-agent-starter-skills. Use these exact paths with "hermes skills install <path> --yes":
+Install these four free starter skills from the public repo https://github.com/keepinitgreen93/hire-your-ai-agent-starter-skills. Use these exact paths with "hermes skills install <path> --yes" and do not change them:
 keepinitgreen93/hire-your-ai-agent-starter-skills/skills/company-brain-starter
 keepinitgreen93/hire-your-ai-agent-starter-skills/skills/dream-customer-avatar-starter
 keepinitgreen93/hire-your-ai-agent-starter-skills/skills/convert-follow-up-loop
 keepinitgreen93/hire-your-ai-agent-starter-skills/skills/organic-content-engine
-Then confirm each one is installed. If one fails, show me the exact command to run myself and keep going.
+Confirm each one is installed. If one fails, show me the exact command to run myself and keep going.
 ```
 
 If Hermes cannot install a skill, it will show you the exact command. You can also run the commands yourself. Open a terminal (PowerShell on Windows, Terminal on a Mac) and paste these four lines:
