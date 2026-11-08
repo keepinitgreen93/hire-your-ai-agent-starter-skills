@@ -33,11 +33,11 @@ It drafts. It does not publish, send, or change any account.
 
 ## Procedure
 
-1. Read the One Offer Sheet, the Company Brain, and the customer profile. Say the offer back in one line. Done when the owner agrees.
+1. Read the One Offer Sheet, the Company Brain, and the customer profile. Say the offer back in one line, and note the Offer type (transactional or transformational). Done when the owner agrees.
 2. Ask two short questions, one at a time:
    - What does the buyer worry about or ask right before they buy this offer?
    - Does the owner like to teach live (an event) or would the owner rather give a short guide, checklist, or tool? Is a live event even possible this month?
-3. Write 3 to 5 ideas. Mix the formats. Include at least one event idea if the owner can teach live. Formats to pick from: checklist, short guide, mini training video, planner or template, event registration (webinar, workshop, class), simple self check that ends in a result.
+3. Write 3 to 5 ideas. Mix the formats. For a transactional offer, favor items that speed up the yes, such as a price guide, an availability check, or a prep checklist. For a transformational offer, favor items that teach and build trust, such as a short training, a plan, or a webinar. Include at least one event idea if the owner can teach live. Formats to pick from: checklist, short guide, mini training video, planner or template, event registration (webinar, workshop, class), simple self check that ends in a result.
 4. Score each idea from 1 to 5 on these five points. Show the table. Do the math in the table, not in your head.
    - Fit with the offer: does it lead straight to the offer?
    - Buyer pull: would the customer in the profile want it today?
@@ -71,6 +71,7 @@ Recommended: #[N], because [two lines].
 - When they get it (right after the quiz, or on the event date):
 - What it is NOT (so nothing is overpromised):
 - Event facts (if an event): date, time, time zone, place or link, replay yes/no
+- Offer type (from the One Offer Sheet):
 - The next step after it (the offer, from the One Offer Sheet):
 ```
 

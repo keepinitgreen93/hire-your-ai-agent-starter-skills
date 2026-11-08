@@ -20,9 +20,9 @@ Each skill drafts and plans. None of them sends, publishes, spends, or changes a
 
 The three Day 3 skills run in order. Each one reads what the one before it saved.
 
-1. `offer-clarity-starter` writes the One Offer Sheet.
+1. `offer-clarity-starter` writes the One Offer Sheet and asks one question: is your offer a quick, clear purchase (transactional) or a bigger change that needs trust (transformational)?
 2. `lead-magnet-idea-starter` reads that sheet and writes the Promise Card: the exact thing your ad promises and your quiz delivers.
-3. `quiz-result-vsl-starter` reads both, maps the quiz and the result pages, writes the VSL scripts, and ends with the build prompt for AI Studio.
+3. `quiz-result-vsl-starter` reads both, picks the quiz template for your offer type (the Quick Match Quiz for a quick, clear purchase, or the Path Finder Quiz for a bigger change that needs trust), maps the quiz and the result pages, writes the VSL scripts, and ends with the build prompt for AI Studio.
 
 They also read your Company Brain (`company-brain-starter`) and your customer profile (`dream-customer-avatar-starter`). The whole chain is: Company Brain, customer profile, offer, lead magnet, quiz and result pages.
 

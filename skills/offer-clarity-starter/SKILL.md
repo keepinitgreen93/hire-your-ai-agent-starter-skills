@@ -35,7 +35,11 @@ Do not use it to invent a new business. It sharpens what the owner already sells
 
 1. Read the Company Brain and the customer profile. Say back, in two lines, what you think the owner sells and who it is for. Ask if that is right. Done when the owner says yes or corrects you.
 2. Ask which ONE thing the owner wants more people to say yes to in the next 90 days. If there are many, help the owner choose one. Done when one offer is named.
-3. Interview the owner one question at a time. Wait for each answer. If an answer is thin, ask one follow up. Cover:
+3. Classify the offer with ONE question. Ask: "When someone says yes to this offer, is it a quick, clear purchase, like booking a service, or a bigger change that takes trust and some teaching first?" Explain the two types in plain words:
+   - **Transactional:** a quick, clear purchase. The buyer knows what they need and wants it handled. Examples: booking a visit, a quote, a cleaning, a repair, a class seat.
+   - **Transformational:** a bigger change that needs trust and education. The buyer has to see the gap and believe a better path exists. Examples: coaching, consulting, a program, a long term service.
+   If it is a mix, ask which part the first quiz should sell, and pick that one. Record the answer as the **Offer type**. The quiz skill uses it to pick the right template: the Quick Match Quiz for transactional, the Path Finder Quiz for transformational. Done when the owner agrees with one type.
+4. Interview the owner one question at a time. Wait for each answer. If an answer is thin, ask one follow up. Cover:
    - Who is this for? Who is it NOT for?
    - What result do they want? What does life look like when they get it?
    - What do they get? List what is included, in plain words.
@@ -44,14 +48,16 @@ Do not use it to invent a new business. It sharpens what the owner already sells
    - What real reason is there to act now? Examples: a date, a limited number of spots, a season. If there is no true reason, say so. Do not invent one.
    - What real proof exists? Reviews, photos, numbers the owner can show.
    - What must the offer never promise? (This protects the owner.)
-4. Write the One Offer Sheet (format below). Show it as a preview. Done when the owner has read every line.
-5. Ask what is wrong or missing. Fix it. Save only after the owner says yes. Done when the owner approves the sheet.
-6. Hand off. Tell the owner the next skill is `lead-magnet-idea-starter`, which finds a free item that leads into this offer. Offer to run it now.
+5. Write the One Offer Sheet (format below). Show it as a preview. Done when the owner has read every line.
+6. Ask what is wrong or missing. Fix it. Save only after the owner says yes. Done when the owner approves the sheet.
+7. Hand off. Tell the owner the next skill is `lead-magnet-idea-starter`, which finds a free item that leads into this offer. Offer to run it now.
 
 ## Output
 
 ```markdown
 # One Offer Sheet
+
+## Offer type: Transactional or Transformational (and why)
 
 ## The offer in one sentence
 I help [WHO] get [RESULT] with [WHAT THEY GET], so they can [LIFE AFTER].
@@ -82,8 +88,9 @@ If the business is in health, medical, mental health, wellness care, or finance:
 
 ## Pitfalls
 
+- Owners often say "both" on the type question. Pick the type of the first thing a new lead will say yes to.
 - Owners list five offers. Pick one. A second offer can get its own sheet later.
-- "Results" can drift into promises. Keep the result to what the owner can truly deliver, and write it as the goal, not a guarantee.
+- "Results" can drift into promises. Keep the result to what the owner can actually deliver, and write it as the goal, not a guarantee.
 - A price the owner is unsure about is a [PLACEHOLDER], not a guess.
 - Do not copy another company's offer, price, or proof into the sheet.
 
