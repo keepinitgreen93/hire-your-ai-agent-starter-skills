@@ -31,7 +31,7 @@ Do not use it to pull private data from other tools. It only uses what the owner
 
 ## Procedure
 
-1. Check the installed skills. Tell the owner whether the four starter skills are installed: `company-brain-starter`, `dream-customer-avatar-starter`, `convert-follow-up-loop`, and `organic-content-engine`. If any are missing, give the install line from the README of this repo and keep going. Done when the owner knows which of the four are present.
+1. Check the installed skills. Tell the owner whether the seven starter skills are installed: `company-brain-starter`, `dream-customer-avatar-starter`, `convert-follow-up-loop`, `organic-content-engine`, `offer-clarity-starter`, `lead-magnet-idea-starter`, and `quiz-result-vsl-starter`. If any are missing, give the install line from the README of this repo and keep going. Done when the owner knows which of the seven are present.
 2. Ask for the business name, website address, and main service area.
 3. Pull the website with Firecrawl or Hermes web tools. Summarize what it says about who the business helps, what it sells, and how it talks. Use it to confirm and fill gaps, never to overwrite what the owner says. Done when you have a short website summary or a pasted substitute.
 4. Interview the owner one question at a time. Wait for each answer. If an answer is thin, ask one follow up. Cover:
@@ -51,7 +51,7 @@ Do not use it to pull private data from other tools. It only uses what the owner
 1. `Company Brain v1` preview, then the saved files.
 2. Summary of the business, offer, and ideal client.
 3. The 3 biggest gaps.
-4. A note that `dream-customer-avatar-starter` and `convert-follow-up-loop` are ready for Day 2 and Day 3, and `organic-content-engine` is ready once the quiz is live.
+4. A note that `dream-customer-avatar-starter` and `convert-follow-up-loop` are ready for Day 2 and Day 3, and `organic-content-engine` is ready once the quiz is live. The three Day 3 skills (`offer-clarity-starter`, `lead-magnet-idea-starter`, `quiz-result-vsl-starter`) run in that order.
 
 ## Pitfalls
 
