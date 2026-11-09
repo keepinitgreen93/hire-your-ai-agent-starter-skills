@@ -1,7 +1,7 @@
 ---
 name: company-brain-starter
 description: Interview the owner, then build a synced Company Brain.
-version: 3.0.0
+version: 3.0.1
 author: Truly Authentic Marketing
 license: MIT
 platforms: [linux, macos, windows]
@@ -86,9 +86,10 @@ Documents/
 
 ### Part 3: Build
 
-10. Run `python scaffold_brain.py build --answers <answers.json> --parent <Documents folder> --approved`. It builds only what the answers call for: the Brain, the Deliverables folder, project folders with README pointers, `.gitignore`, a commit safety check, `AGENTS.md` and `SYNC.md`.
+10. Run `python scaffold_brain.py build --answers <answers.json> --parent <Documents folder> --approved`. It builds only what the answers call for: the Brain, the Deliverables folder, project folders with README pointers, `.gitignore`, a commit safety check, `BRAIN-GUIDE.md` (the rule sheet for AI agents) and `SYNC.md`.
 11. Open the starter pages in `brain/business/` and `brain/offers/`. Fill them with the owner's answers and the website summary. Show a preview of each page. Ask what is wrong. Fix it. Save only after the owner approves. Use `[PLACEHOLDER]` and `[REAL PROOF NEEDED]` for anything unknown.
 12. Add a line to `brain/_log.md` and update `brain/_index.md` for every page you add or change.
+12a. Optional, only with the owner's explicit yes: some AI tools look for a rules file named `AGENTS.md` in a folder. Ask: "Do you want me to create a small pointer file in your Brain that tells your AI agent to read BRAIN-GUIDE.md first?" If the owner says no or is unsure, skip it. If yes, create that one file yourself with Hermes file tools, containing one line that points to `BRAIN-GUIDE.md` and `brain/_index.md`, and tell the owner exactly where it is. The builder never creates it.
 
 ### Part 4: Backup and sync
 
@@ -111,7 +112,7 @@ Agent instructions are not access controls. Never grant a client agent access to
 
 1. The folder plan the owner approved, then the built folders.
 2. Starter pages: overview, goals, ideal customer, products and services, voice and tone, proof, plus one page per client if clients were given.
-3. `AGENTS.md`, `SYNC.md`, `.gitignore`, and the commit safety check.
+3. `BRAIN-GUIDE.md`, `SYNC.md`, `.gitignore`, and the commit safety check.
 4. Summary of the business, offer and ideal client, and the 3 biggest gaps.
 5. A note that `dream-customer-avatar-starter` and `convert-follow-up-loop` are ready for Day 2 and Day 3, and `organic-content-engine` is ready once the quiz is live. The three Day 3 skills (`offer-clarity-starter`, `lead-magnet-idea-starter`, `quiz-result-vsl-starter`) run in that order.
 

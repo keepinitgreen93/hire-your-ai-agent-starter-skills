@@ -1,4 +1,4 @@
-"""Run: python test_scaffold.py <scratch directory>. No cloud access."""
+"""Run: python tests/test_scaffold.py <scratch directory>. No cloud access. Repo-level test, not shipped inside the skill."""
 import json
 import os
 GIT = os.environ.get('GIT_EXE', 'git')
@@ -7,7 +7,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-script = Path(__file__).with_name('scaffold_brain.py')
+script = Path(__file__).resolve().parents[1] / 'skills' / 'company-brain-starter' / 'scripts' / 'scaffold_brain.py'
 base = Path(sys.argv[1]).resolve()
 with tempfile.TemporaryDirectory(prefix='brain-test-', dir=base) as temp:
     root = Path(temp)

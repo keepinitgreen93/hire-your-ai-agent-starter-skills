@@ -101,7 +101,7 @@ def tree_text(a, p):
     lines = []
     v = VAULT
     lines.append(f"{v}/   (notes and knowledge only, your source of truth)")
-    lines.append("  README.md, AGENTS.md, SYNC.md, .gitignore, .githooks/pre-commit")
+    lines.append("  README.md, BRAIN-GUIDE.md, SYNC.md, .gitignore, .githooks/pre-commit")
     lines.append("  brain/")
     lines.append("    _index.md, _log.md")
     lines.append("    business/   overview, goals, ideal customer, voice and tone, proof")
@@ -205,7 +205,7 @@ It holds notes and knowledge only: markdown and small text files.
 - `brain/` is the compiled knowledge. Start at `brain/_index.md`.
 - `raw/` is your inbox. Drop anything here to be filed later.
 - `workspace/` holds one folder per project, grouped by who it is for.
-- `AGENTS.md` is the rule sheet every AI agent reads first.
+- `BRAIN-GUIDE.md` is the rule sheet every AI agent reads first.
 - `SYNC.md` explains the backup and how to restore on a new computer.
 
 ## Big files
@@ -344,7 +344,7 @@ The `{DELIV}` folder is not part of the notes sync. Back it up separately: a clo
    - Obsidian Sync: sign in, then choose "Connect to remote vault".
 3. Get your big files back from the Deliverables backup and put the folder next to `{VAULT}`, named `{DELIV}`.
 4. In Obsidian choose "Open folder as vault" and pick `{VAULT}`.
-5. Tell Hermes: "My Company Brain is at this folder. Read AGENTS.md and brain/_index.md." Hermes can use it right away.
+5. Tell Hermes: "My Company Brain is at this folder. Read BRAIN-GUIDE.md and brain/_index.md." Hermes can use it right away.
 6. If you use Git, turn the safety check back on: ask Hermes to run `git config core.hooksPath .githooks` inside the Brain.
 """
 
@@ -418,7 +418,7 @@ def build(a, parent):
 
     # Vault root
     write(v / "README.md", readme_vault(a, p))
-    write(v / "AGENTS.md", agents_text(a, p))
+    write(v / "BRAIN-GUIDE.md", agents_text(a, p))
     write(v / "SYNC.md", sync_text(a, p))
     write(v / ".gitignore", gitignore_text(a, p))
     write(v / ".gitattributes", ".githooks/* text eol=lf\n")
