@@ -1,7 +1,7 @@
 ---
 name: quiz-result-vsl-starter
-description: Map a quiz whose result pages deliver, pitch, and book.
-version: 1.0.0
+description: Use when planning a quiz. Map results, VSL and booking.
+version: 1.1.0
 author: Truly Authentic Marketing
 license: MIT
 platforms: [linux, macos, windows]
@@ -21,6 +21,15 @@ It drafts. It does not build, publish, send, or change any account.
 
 - The owner has an approved One Offer Sheet (`offer-clarity-starter`) and an approved Promise Card (`lead-magnet-idea-starter`).
 - The owner wants a quiz that delivers what the ad promised, then invites the right people to book.
+
+## What is in this skill
+
+Everything this skill needs is inside its own folder. It needs no account, no outside file and no extra tool to run.
+
+- `SKILL.md`: this file. The questions, the steps and the output format.
+- `scripts/selftest.py`: checks that the skill folder is complete on this computer. Run `python <skill-dir>/scripts/selftest.py`, where `<skill-dir>` is the folder `skill_view` reports for this skill. Quote the path.
+
+It works best after the skills named under Prerequisites. All of them come in the same free starter set. If one is not installed, do not stop. Ask the owner to paste what that skill would have saved, or ask its questions yourself, and mark anything unknown `[PLACEHOLDER]`.
 
 ## Prerequisites
 

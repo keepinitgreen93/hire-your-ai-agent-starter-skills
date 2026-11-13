@@ -1,7 +1,7 @@
 ---
 name: offer-clarity-starter
-description: Interview the owner and define one clear offer.
-version: 1.0.0
+description: Use when the offer is fuzzy. Interview, write one offer.
+version: 1.1.0
 author: Truly Authentic Marketing
 license: MIT
 platforms: [linux, macos, windows]
@@ -24,6 +24,15 @@ It drafts. It does not publish, send, or change any account.
 - The owner wants an ad, a quiz, and a video that all say the same thing.
 
 Do not use it to invent a new business. It sharpens what the owner already sells.
+
+## What is in this skill
+
+Everything this skill needs is inside its own folder. It needs no account, no outside file and no extra tool to run.
+
+- `SKILL.md`: this file. The questions, the steps and the output format.
+- `scripts/selftest.py`: checks that the skill folder is complete on this computer. Run `python <skill-dir>/scripts/selftest.py`, where `<skill-dir>` is the folder `skill_view` reports for this skill. Quote the path.
+
+It works best after the skills named under Prerequisites. All of them come in the same free starter set. If one is not installed, do not stop. Ask the owner to paste what that skill would have saved, or ask its questions yourself, and mark anything unknown `[PLACEHOLDER]`.
 
 ## Prerequisites
 

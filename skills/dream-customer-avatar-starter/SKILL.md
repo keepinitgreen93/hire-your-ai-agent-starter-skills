@@ -1,14 +1,14 @@
 ---
 name: dream-customer-avatar-starter
-description: Interview the owner and write one customer profile.
-version: 2.0.0
+description: Use when defining the ideal customer. Write one profile.
+version: 2.1.0
 author: Truly Authentic Marketing
 license: MIT
 platforms: [linux, macos, windows]
 metadata:
   hermes:
     tags: [hire-your-ai-agent, customer-avatar, ai-employee]
-    related_skills: [company-brain-starter, convert-follow-up-loop]
+    related_skills: [company-brain-starter, convert-follow-up-loop, product-champ-onboarding]
 ---
 
 # Dream Customer Avatar Starter
@@ -21,11 +21,20 @@ This skill builds one useful customer profile from an interview. The profile fee
 - The owner needs to tell the AI employee who it is talking to.
 - The owner wants quiz questions that match a real buyer.
 
+## What is in this skill
+
+Everything this skill needs is inside its own folder. It needs no account, no outside file and no extra tool to run.
+
+- `SKILL.md`: this file. The questions, the steps and the output format.
+- `scripts/selftest.py`: checks that the skill folder is complete on this computer. Run `python <skill-dir>/scripts/selftest.py`, where `<skill-dir>` is the folder `skill_view` reports for this skill. Quote the path.
+
+It works best after the skills named under Prerequisites. All of them come in the same free starter set. If one is not installed, do not stop. Ask the owner to paste what that skill would have saved, or ask its questions yourself, and mark anything unknown `[PLACEHOLDER]`.
+
 ## Prerequisites
 
 - A starter Company Brain from `company-brain-starter`.
 - Optional: real reviews, call notes, or messages the owner pastes in.
-- Optional: Product Champ connected through HighLevel's official MCP server for a read only look at past conversations. Product Champ is TAM's white label of HighLevel. Hermes connects to it through HighLevel's official MCP server at `https://services.leadconnectorhq.com/mcp/`. The owner makes a Private Integration Token and finds the Location ID inside Product Champ, and keeps both in a private settings file. Start with View permissions only. Only read what the owner names, and only for the buyer language you need.
+- Optional: real buyer wording from past messages. The simple way is for the owner to paste a few real messages with names and private details removed. If the owner already has a Product Champ connection that they chose to let read conversations, you may read only the conversations the owner names, and only for the buyer language you need. The `product-champ-onboarding` skill sets up the connection, and it starts without access to conversations. With no connection, use what the owner pastes.
 
 ## Procedure
 

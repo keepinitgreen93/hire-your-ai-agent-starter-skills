@@ -1,14 +1,14 @@
 ---
 name: convert-follow-up-loop
-description: Map lead capture, follow up, and booking for one offer.
-version: 2.0.0
+description: Use when mapping lead follow up. Draft the path to booked.
+version: 2.1.0
 author: Truly Authentic Marketing
 license: MIT
 platforms: [linux, macos, windows]
 metadata:
   hermes:
     tags: [hire-your-ai-agent, follow-up, product-champ, quiz]
-    related_skills: [company-brain-starter, dream-customer-avatar-starter]
+    related_skills: [company-brain-starter, dream-customer-avatar-starter, product-champ-onboarding]
 ---
 
 # Convert and Follow Up Loop
@@ -21,11 +21,20 @@ This skill maps the simple path from a new lead to a booked call: capture, first
 - The owner asks where leads come from and what happens next.
 - The owner wants follow up messages drafted.
 
+## What is in this skill
+
+Everything this skill needs is inside its own folder. It needs no account, no outside file and no extra tool to run.
+
+- `SKILL.md`: this file. The questions, the steps and the output format.
+- `scripts/selftest.py`: checks that the skill folder is complete on this computer. Run `python <skill-dir>/scripts/selftest.py`, where `<skill-dir>` is the folder `skill_view` reports for this skill. Quote the path.
+
+It works best after the skills named under Prerequisites. All of them come in the same free starter set. If one is not installed, do not stop. Ask the owner to paste what that skill would have saved, or ask its questions yourself, and mark anything unknown `[PLACEHOLDER]`.
+
 ## Prerequisites
 
 - A starter Company Brain, and ideally the customer profile from `dream-customer-avatar-starter`.
 - The main offer or next step, and a booking link or phone number.
-- Optional read only check of Product Champ. Product Champ is TAM's white label of HighLevel. Hermes connects to it through HighLevel's official MCP server at `https://services.leadconnectorhq.com/mcp/`. The owner makes a Private Integration Token and finds the Location ID inside Product Champ, and keeps both in a private settings file. Start with View permissions only. Use it to see what already exists, such as calendars, pipelines, and recent conversations. Do not create, edit, send, or delete anything through it. The owner can add Edit permissions later, one at a time.
+- Optional: a read only look at the owner's own Product Champ account, to see what already exists, such as calendars, pipelines, and forms. The `product-champ-onboarding` skill sets up that connection with view access only. If it is not installed or not connected, skip the check and ask the owner what already exists. Do not create, edit, send, or delete anything through the connection.
 - Product Champ is a paid plan after the free 30 day trial. Texting registration is submitted only after the paid plan is active.
 
 ## Procedure
@@ -71,7 +80,7 @@ Message 3:
 
 - Texting needs the carrier registration to be approved first. Draft the messages, and do not promise texts go out before then.
 - Only message people who opted in. Do not draft cold outreach.
-- A read only token cannot change anything. If Hermes needs to build, the owner decides whether to add Edit permissions.
+- A view only connection cannot change anything. If Hermes needs to build, the owner decides whether to add an edit permission.
 - Do not claim the loop works until a test lead has passed through it.
 
 ## Verification

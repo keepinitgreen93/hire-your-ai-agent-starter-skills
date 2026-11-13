@@ -1,0 +1,27 @@
+{
+  "mode": "readiness",
+  "business": "[BUSINESS NAME]",
+  "date": "[DATE]",
+  "prepared_by": "Prepared by your AI assistant, read only",
+  "summary": "Your account is connected and I read your settings without changing anything. Here is what is ready, what needs your answer, and what is blocked.",
+  "what_this_means": "READY means I read it and it is correct. NEEDS OWNER means only you can answer. BLOCKED means something outside this chat must be fixed first. CAN'T TELL means my connection could not read it, so it needs a look on screen.",
+  "scorecard": [
+    {"area": "Connection", "item": "Read access to the right account", "status": "READY", "detail": "Read the calendar list. The account name matches [BUSINESS NAME].", "needed": "Nothing"},
+    {"area": "Business profile", "item": "Address", "status": "NEEDS OWNER", "detail": "The profile and the website show different addresses.", "needed": "Which address is correct: [ADDRESS A] or [ADDRESS B]?"},
+    {"area": "Workflows", "item": "Missed call text back", "status": "BLOCKED", "detail": "One step points at a message that no longer exists.", "needed": "Pick the message for that step, or ask your Product Champ support contact to restore it."},
+    {"area": "Phone", "item": "Texting registration status", "status": "CAN'T TELL", "detail": "My connection cannot read registration status.", "needed": "Open Settings, Phone System, Trust Center and tell me what the texting card says."}
+  ],
+  "fixed": [],
+  "needs_owner": [
+    {"question": "Which address is correct?", "why": "Carriers compare your address across your account and website when you register for texting.", "found": "Profile: [ADDRESS A]. Website: [ADDRESS B]."}
+  ],
+  "suggested": [
+    {"what": "Add the text message section to your Privacy Policy", "why": "The page does not mention text messages.", "how": "Run the texting-ready-kit skill."}
+  ],
+  "ready_to_turn_on": [],
+  "compliance": [
+    {"step": "Privacy Policy and Terms pages are live", "status": "READY", "detail": "Both pages opened with no login."}
+  ],
+  "not_done": ["Nothing was changed, sent, published, turned on or submitted."],
+  "next_step": "Answer question 1, then I will show you the exact list of values I would fill in, and wait for your yes."
+}

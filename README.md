@@ -1,6 +1,6 @@
 # Hire Your AI Agent Starter Skills
 
-Seven free starter skills for Hermes, from Truly Authentic Marketing. They go with the Hire Your AI Agent challenge: 3 days to install Hermes, hire an AI employee in Product Champ, and build a quiz lead magnet.
+Nine free starter skills for Hermes, from Truly Authentic Marketing. They go with the Hire Your AI Agent challenge: 3 days to install Hermes, hire an AI employee in Product Champ, and build a quiz lead magnet.
 
 Each skill drafts and plans. None of them sends, publishes, spends, or changes an account without your approval.
 
@@ -9,12 +9,19 @@ Each skill drafts and plans. None of them sends, publishes, spends, or changes a
 | Skill | Day | What it does |
 |---|---|---|
 | `company-brain-starter` | Day 1 | Interviews you one question at a time, reads your website, shows a preview, then saves a starter Company Brain. Ends with a summary and your 3 biggest gaps. |
+| `product-champ-onboarding` | Day 2 | Connects Hermes to your own Product Champ account with view access, checks your settings, shows which blanks your workflows need filled, fills them only after your yes, and walks you through texting readiness. Ends with a readable report. |
+| `texting-ready-kit` | Day 2, optional | Helps you write your Privacy Policy, Terms and text opt-in wording so they line up with what phone carriers look for. Checks your drafts and audits your site. Carriers decide approval. It is not legal advice. |
 | `dream-customer-avatar-starter` | Day 2 | Interviews you and writes one customer profile. Gives you a block to paste into your Product Champ AI employee. |
 | `convert-follow-up-loop` | Day 2 and 3 | Maps how a lead is captured, answered, qualified, booked, and followed up. Drafts the quiz follow up messages. |
 | `organic-content-engine` | After Day 3 | Turns one buyer question into a week of posts that point to your quiz. |
 | `offer-clarity-starter` | Day 3, step 1 | Interviews you and writes down one clear offer: who it is for, the result, what is included, the price or next step, and a reason to act now. |
 | `lead-magnet-idea-starter` | Day 3, step 2 | Gives you 3 to 5 free lead magnet ideas that lead into that offer, scores them, and picks one. A webinar or workshop sign up can be the lead magnet. Writes the exact promise your ad and quiz must keep. |
 | `quiz-result-vsl-starter` | Day 3, step 3 | Maps a short quiz that delivers the promised lead magnet. Each result page shows the item first, then a short video sales letter (VSL) script, then your booking calendar. Ends with the AI Studio build prompt. |
+
+## How the Day 2 skills work together
+
+1. `product-champ-onboarding` connects Hermes to your own Product Champ account, checks what is ready, and fills gaps only after your yes.
+2. When it finishes, it offers `texting-ready-kit`. That step is optional, and we recommend it.
 
 ## How the Day 3 skills work together
 
@@ -35,8 +42,10 @@ You need the Hermes desktop app: https://hermes-agent.nousresearch.com/desktop
 The easy way: open a new Hermes chat and paste this prompt.
 
 ```text
-Install these seven free starter skills from the public repo https://github.com/keepinitgreen93/hire-your-ai-agent-starter-skills. Use these exact paths with "hermes skills install <path> --yes" and do not change them:
+Install these nine free starter skills from the public repo https://github.com/keepinitgreen93/hire-your-ai-agent-starter-skills. Use these exact paths with "hermes skills install <path> --yes" and do not change them:
 keepinitgreen93/hire-your-ai-agent-starter-skills/skills/company-brain-starter
+keepinitgreen93/hire-your-ai-agent-starter-skills/skills/product-champ-onboarding
+keepinitgreen93/hire-your-ai-agent-starter-skills/skills/texting-ready-kit
 keepinitgreen93/hire-your-ai-agent-starter-skills/skills/dream-customer-avatar-starter
 keepinitgreen93/hire-your-ai-agent-starter-skills/skills/convert-follow-up-loop
 keepinitgreen93/hire-your-ai-agent-starter-skills/skills/organic-content-engine
@@ -46,10 +55,12 @@ keepinitgreen93/hire-your-ai-agent-starter-skills/skills/quiz-result-vsl-starter
 Confirm each one is installed. If one fails, show me the exact command to run myself and keep going.
 ```
 
-If Hermes cannot install a skill, it will show you the exact command. You can also run the commands yourself. Open a terminal (PowerShell on Windows, Terminal on a Mac) and paste these seven lines:
+If Hermes cannot install a skill, it will show you the exact command. You can also run the commands yourself. Open a terminal (PowerShell on Windows, Terminal on a Mac) and paste these nine lines:
 
 ```text
 hermes skills install keepinitgreen93/hire-your-ai-agent-starter-skills/skills/company-brain-starter --yes
+hermes skills install keepinitgreen93/hire-your-ai-agent-starter-skills/skills/product-champ-onboarding --yes
+hermes skills install keepinitgreen93/hire-your-ai-agent-starter-skills/skills/texting-ready-kit --yes
 hermes skills install keepinitgreen93/hire-your-ai-agent-starter-skills/skills/dream-customer-avatar-starter --yes
 hermes skills install keepinitgreen93/hire-your-ai-agent-starter-skills/skills/convert-follow-up-loop --yes
 hermes skills install keepinitgreen93/hire-your-ai-agent-starter-skills/skills/organic-content-engine --yes
@@ -62,23 +73,46 @@ Then start a new Hermes chat. Ask: "Which of my installed skills came from Truly
 
 To install one skill, run only its line.
 
+## Every skill carries its own files
+
+Each skill is one folder, and everything it needs is inside that folder. It works the same on your computer, a server, or any Hermes setup, on Windows, macOS and Linux. No skill needs a file from our computers, a private repo, or a skill that is not in this set.
+
+Inside a skill folder you will find:
+
+- `SKILL.md`: the instructions Hermes follows. It has a "What is in this skill" section that lists every file.
+- `references/`: longer notes Hermes reads when a step needs them.
+- `templates/`: fill-in files you get to keep.
+- `scripts/`: small helper programs. They use only what comes with Python 3.9 or newer, make no network calls, and change nothing outside the folders you approve. Every skill has `scripts/selftest.py`, which proves the folder is complete on your computer.
+- `assets/`: images or other fixed files, when a skill has any.
+
+If Python is not on your computer, the skills still work. Hermes does those checks by hand.
+
 ## Tools these skills use
 
 - Hermes desktop app, running on your own Claude subscription.
-- Product Champ, TAM's white label of HighLevel. Hermes connects through HighLevel's official MCP server (https://services.leadconnectorhq.com/mcp/) with a Private Integration Token and your Location ID. Start read only. Keep the token private. Never paste it into a chat.
-- Composio, for other apps.
-- Firecrawl, or the Hermes web tools, to read your website.
+- Your own Product Champ account, for Day 2 and Day 3. The `product-champ-onboarding` skill walks you through connecting Hermes to it, starting with view access only. You make the secret code inside your own account and keep it private. Never paste it into a chat.
+- Optional: Composio, for other apps.
+- Optional: Firecrawl, or the Hermes web tools, to read your website. If neither is set up, Hermes asks you to paste the text.
 
 ## Safety rules built into every skill
 
 - No sends, posts, spend, or account changes without your yes.
-- No made up proof, reviews, prices, or results. Gaps are marked `[PLACEHOLDER]` or `[REAL PROOF NEEDED]`.
+- No made up proof, reviews, prices, or results. Gaps are marked `[PLACEHOLDER]`, `[NEEDS OWNER]` or `[REAL PROOF NEEDED]`.
 - No passwords, tokens, or keys in chat.
+- Texting registration is never submitted for you. Phone carriers decide approval, and it is never guaranteed.
 
 ## Check the skills yourself
 
+Check the whole set from a copy of this repo:
+
 ```text
 python scripts/validate_library.py
+```
+
+Check one installed skill from its own folder:
+
+```text
+python scripts/selftest.py
 ```
 
 ## Need a hand?

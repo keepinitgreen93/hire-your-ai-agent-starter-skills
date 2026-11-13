@@ -1,7 +1,7 @@
 ---
 name: lead-magnet-idea-starter
-description: Pick one lead magnet or event that leads into the offer.
-version: 1.0.0
+description: Use when choosing a lead magnet. Score ideas, pick one.
+version: 1.1.0
 author: Truly Authentic Marketing
 license: MIT
 platforms: [linux, macos, windows]
@@ -24,6 +24,15 @@ It drafts. It does not publish, send, or change any account.
 - The owner finished `offer-clarity-starter` and has an approved One Offer Sheet.
 - The owner asks "what should I give away?"
 - The ad says one thing and the quiz says another, and the owner wants them to match.
+
+## What is in this skill
+
+Everything this skill needs is inside its own folder. It needs no account, no outside file and no extra tool to run.
+
+- `SKILL.md`: this file. The questions, the steps and the output format.
+- `scripts/selftest.py`: checks that the skill folder is complete on this computer. Run `python <skill-dir>/scripts/selftest.py`, where `<skill-dir>` is the folder `skill_view` reports for this skill. Quote the path.
+
+It works best after the skills named under Prerequisites. All of them come in the same free starter set. If one is not installed, do not stop. Ask the owner to paste what that skill would have saved, or ask its questions yourself, and mark anything unknown `[PLACEHOLDER]`.
 
 ## Prerequisites
 

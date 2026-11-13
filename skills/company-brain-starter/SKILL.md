@@ -1,14 +1,14 @@
 ---
 name: company-brain-starter
-description: Interview the owner, then build a synced Company Brain.
-version: 3.0.1
+description: Use when setting up a Company Brain. Interview, then build.
+version: 3.1.0
 author: Truly Authentic Marketing
 license: MIT
 platforms: [linux, macos, windows]
 metadata:
   hermes:
     tags: [hire-your-ai-agent, company-brain, onboarding, backup]
-    related_skills: [dream-customer-avatar-starter, convert-follow-up-loop, organic-content-engine]
+    related_skills: [product-champ-onboarding, dream-customer-avatar-starter, convert-follow-up-loop, organic-content-engine]
 ---
 
 # Company Brain Starter
@@ -24,6 +24,14 @@ The rule that matters most: **ask first, build second.** Do not create a single 
 - The owner says "set up my Company Brain", "set up my brain the right way", or asks for the quick setup.
 
 Do not use it to pull private data from other tools. It only uses what the owner says and what is public on the owner's website.
+
+## What is in this skill
+
+Everything this skill needs is inside its own folder. It needs no account and no outside file.
+
+- `SKILL.md`: this file. The interview, the build steps and the backup steps.
+- `scripts/scaffold_brain.py`: the folder builder. Plain Python with no network calls. It shows a plan, builds only after approval, checks the Brain for stray big files, and exports a notes-only copy.
+- `scripts/selftest.py` and `scripts/selftest_extra.py`: prove the skill folder is complete and the builder works on this computer. Run `python <skill-dir>/scripts/selftest.py`.
 
 ## Prerequisites
 
@@ -61,7 +69,7 @@ Documents/
 
 ### Part 1: Interview (ask first)
 
-1. Check the installed skills. Tell the owner whether the seven starter skills are installed: `company-brain-starter`, `dream-customer-avatar-starter`, `convert-follow-up-loop`, `organic-content-engine`, `offer-clarity-starter`, `lead-magnet-idea-starter`, and `quiz-result-vsl-starter`. If any are missing, give the install line from the README of this repo and keep going.
+1. Check the installed skills. Tell the owner whether the nine starter skills are installed: `company-brain-starter`, `product-champ-onboarding`, `texting-ready-kit`, `dream-customer-avatar-starter`, `convert-follow-up-loop`, `organic-content-engine`, `offer-clarity-starter`, `lead-magnet-idea-starter`, and `quiz-result-vsl-starter`. If any are missing, give the owner this line with the missing skill's name at the end, and keep going: `hermes skills install keepinitgreen93/hire-your-ai-agent-starter-skills/skills/<skill-name> --yes`
 2. Say in two lines what is about to happen: ten short questions, then a preview of the folders, then nothing is built until the owner says yes.
 3. Ask these questions **one at a time**, in plain words. Wait for each answer. If an answer is thin, ask one follow up. Say back each answer in one line before the next question. The owner can say "skip" to any question.
    1. What is your business called, and what do you sell?
@@ -114,7 +122,7 @@ Agent instructions are not access controls. Never grant a client agent access to
 2. Starter pages: overview, goals, ideal customer, products and services, voice and tone, proof, plus one page per client if clients were given.
 3. `BRAIN-GUIDE.md`, `SYNC.md`, `.gitignore`, and the commit safety check.
 4. Summary of the business, offer and ideal client, and the 3 biggest gaps.
-5. A note that `dream-customer-avatar-starter` and `convert-follow-up-loop` are ready for Day 2 and Day 3, and `organic-content-engine` is ready once the quiz is live. The three Day 3 skills (`offer-clarity-starter`, `lead-magnet-idea-starter`, `quiz-result-vsl-starter`) run in that order.
+5. A note that `product-champ-onboarding`, `texting-ready-kit`, `dream-customer-avatar-starter` and `convert-follow-up-loop` are ready for Day 2 and Day 3, and `organic-content-engine` is ready once the quiz is live. The three Day 3 skills (`offer-clarity-starter`, `lead-magnet-idea-starter`, `quiz-result-vsl-starter`) run in that order.
 
 ## Pitfalls
 
@@ -129,6 +137,7 @@ Agent instructions are not access controls. Never grant a client agent access to
 
 ## Verification
 
+- `python <skill-dir>/scripts/selftest.py` prints SELFTEST PASSED. It builds a sample Brain in a temporary folder and removes it.
 - Run `python scaffold_brain.py check --brain <Company Brain folder>`. It must pass.
 - For Git: `git check-ignore -v` on a test video, PDF and `.env` file must show each one as ignored.
 - Every project README in the Brain names its `Deliverables/<owner>/<project>/` folder.
